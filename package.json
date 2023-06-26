@@ -1,0 +1,26 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm:build\" \"npm:serve\"",
+    "serve": "live-server",
+    "build": "rollup -c --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.43.0",
+    "live-server": "^1.2.2",
+    "rollup": "^3.25.1",
+    "rollup-plugin-import-css": "^3.2.1"
+  },
+  "dependencies": {
+    "on-change": "^4.0.2"
+  }
+}
